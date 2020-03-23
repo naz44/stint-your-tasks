@@ -1,0 +1,38 @@
+form {
+  width: 300px;
+  margin: 0 auto;
+}
+body {
+  background-color: aquamarine;
+  background-size: cover;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: white;
+  align-content: center;
+  align-self: center;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: darkcyan;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+  .btn:hover {
+    opacity: 1;
+  }
+p {
+  font-size: 13px;
+}

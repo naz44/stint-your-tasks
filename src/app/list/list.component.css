@@ -1,0 +1,64 @@
+body {
+  background-color: #e8e8e8;
+  align-self: center;
+}
+
+.todo-list {
+  background-color: aquamarine;
+  padding: 14px;
+  margin-top: 80px;
+  input [type="checkbox"]
+  
+{
+  background-color: aqua;
+}
+
+}
+/* Set a style for the submit button */
+.btn {
+  background-color: darkcyan;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: grabbing;
+  opacity: 0.9;
+}
+
+.todo-complete {
+  color: deeppink;
+  text-decoration: line-through;
+}
+
+.todo-list ul {
+  padding-left: 0;
+  background-color:aquamarine;
+
+{
+  list-style: none;
+}
+
+}
+
+input {
+  border: none;
+  padding: 4px 0;
+}
+
+  input[ng-model="obj.note"] {
+    width: 30%;
+    &:focus, &:active
+
+{
+  border-top: 1px solid #888;
+  border-bottom: 1px solid #888;
+}
+
+}
+
+input[ng-model="inputTitle"] {
+  font-weight: bold;
+}
+
+.div-submit {
+  margin-top: 6px;
+}

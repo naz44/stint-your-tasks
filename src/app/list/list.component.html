@@ -1,0 +1,41 @@
+<div class="container" ng-app="todoApp">
+  <div class="todo-list col-xs-6 col-xs-offset-3" ng-controller="todoController">
+    <form ng-submit="addToList()">
+      <input type="text" ng-model="inputTitle" placeholder="Enter Title">
+      <ul>
+        <li ng-class="{'todo-complete': obj.complete}" ng-repeat="obj in list">
+          <div class="row">
+            <div class="col-xs-1">
+              <input type="checkbox" ng-model="obj.complete" ng-change="checkboxChanged(obj)">
+            </div>
+            <div class="col-xs-11">
+              <input type="text" ng-model="obj.note" ng-change="inputChanged(obj)" placeholder="Edit me to Add to list">
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="checked-list" ng-show="checkedList.length">
+        <ul>
+          <li ng-repeat="obj in checkedList">
+            <div class="row">
+              <div class="col-xs-1">
+                <input type="checkbox" ng-change="checkboxChanged(obj)" ng-model="obj.complete">
+              </div>
+              <div class="col-xs-11">
+                <input type="text" ng-model="obj.note" ng-change="inputChanged(obj)" placeholder="Edit me to Add to list">
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="div-submit text-right">
+        <button class="btn" type="submit">Task Done</button>
+      </div>
+    </form>
+  </div>
+
+
+
+</div>

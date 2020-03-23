@@ -1,0 +1,12 @@
+.card-wrapper {
+  max-width: 120px;
+  min-width: 220px;
+  align-content:center;
+  align-self:right;
+}
+body{
+    background-color:aqua;
+}
+p{
+    font-size:14px;
+}

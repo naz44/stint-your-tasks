@@ -1,0 +1,8 @@
+<body>
+<p align="center">Welcome to {{title}}</p>
+  <p align="center">{{slogan}}</p>
+  <p align="center">Login or Register to proceed</p>
+ <a [routerLink]="'/login'"><p align="center">Login</p></a>
+<a [routerLink]="'/register'"><p align="center">Register</p></a>
+<router-outlet></router-outlet>
+</body>
